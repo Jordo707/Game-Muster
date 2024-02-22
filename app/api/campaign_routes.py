@@ -28,4 +28,4 @@ def all_campaigns():
             'gameMasterId': camp.game_master_id
         }
 
-    return {'campaigns':campaign_datagi}
+    return {'campaigns':campaign_data}
