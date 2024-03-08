@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, session, request
-from app.models import campaign, db
+from app.models import Campaign, db
 #Add forms here
 
 campaign_routes = Blueprint('campaign', __name__)
@@ -19,7 +19,7 @@ def all_campaigns():
     """
     Get all current campaigns
     """
-    campaigns = campaign.query.all()
+    campaigns = Campaign.query.all()
 
     for camp in campaigns:
         campaign_data = {
@@ -29,3 +29,16 @@ def all_campaigns():
         }
 
     return {'campaigns':campaign_data}
+
+@campaign_routes.route('/<campaign_id>')
+def single_campaign(campaign_id):
+    """
+    Get details of given campaign
+    """
+    curr_campaign = Campaign.query.get(campaign_id)
+
+    campaign_data ={
+        "campaign": curr_campaign.to_dict()
+    }
+    
+    return campaign_data
