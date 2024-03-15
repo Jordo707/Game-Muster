@@ -8,7 +8,7 @@ class Campaign(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     campaign_name = db.Column(db.String(40), nullable=False, unique=True)
-    game_master_id = db.Column(db.Inteber, nullable = False)
+    game_master_id = db.Column(db.Integer, nullable = False)
 
     def to_dict(self):
         return {

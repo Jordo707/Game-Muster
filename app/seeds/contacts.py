@@ -20,3 +20,5 @@ def undo_contacts():
         db.session.execute(text('DELETE FROM contacts'))
 
     db.session.commit()
+
+

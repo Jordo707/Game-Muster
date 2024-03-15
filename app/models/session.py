@@ -8,7 +8,7 @@ class Session(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     campaign_id = db.Column(db.Integer, nullable=False)
-    date = db.Column(db.Date_Time, nullable=False)
+    date = db.Column(db.DateTime, nullable=False)
     notes = db.Column(db.String)
 
     def to_dict(self):
