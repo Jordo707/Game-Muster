@@ -97,6 +97,19 @@ def seed_talents():
             talent_name='Cleanse and Purify',
             talent_desc='Burn! Burn! Burn! None shall escape your fiery wrath! Targets exposed to your flamer attacks take a -20 penatly to avoid being hit.'
         )
+        combatMaster = Talent(
+            talent_name='Combat Master',
+            talent_desc='Through a combination of reflex and perception you are able to keep many more opponents at bay in melee than a lesser skilled combatant might. Opponents fighting you in hand-to-hand combat gain no bonuses for outnumbering you.'
+        )
+        concealedCavity = Talent(
+            talent_name='Concealed Cavity',
+            talent_desc='You have a small compartment hidden upon your person. This might be a pouch within your flesh or a chamber fitted into one of your cybernetic implants. You may conceal a small item, no larger than the palm of your hand, within this cavity. The compartment may be discovered on a difficult (-10) search test. If the searcher employs additional technology, such as a medicae scanner or chem-sniffer, this difficulty is reduced to ordinary (+10).'
+        )
+        corpusConversion = Talent(
+            talent_name='Corpus Conversion',
+            talent_desc='You can siphon the health of your physical body to fuel your powers. For every 2 points of damage you voluntarily take, you may add your willpower bonus to your power roll. Using this talent is a free action.'
+        )
+
         db.session.add(airOfAuthority)
         db.session.add(ambidexterous)
         db.session.add(armorOfContempt)
@@ -120,6 +133,9 @@ def seed_talents():
         db.session.add(catfall)
         db.session.add(chemGeld)
         db.session.add(cleanseAndPurify)
+        db.session.add(combatMaster)
+        db.session.add(concealedCavity)
+        db.session.add(corpusConversion)
         db.session.commit()
     except Exception as e:
         print('-------------------------------------------------------')
