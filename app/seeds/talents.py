@@ -109,6 +109,18 @@ def seed_talents():
             talent_name='Corpus Conversion',
             talent_desc='You can siphon the health of your physical body to fuel your powers. For every 2 points of damage you voluntarily take, you may add your willpower bonus to your power roll. Using this talent is a free action.'
         )
+        counterAttack = Talent(
+            talent_name='Counter-Attack',
+            talent_desc="You are skilled at switching from defence to attack in the blink of an eye. When you successfully parry an opponent's attack, you may immediately make an attack against that opponent using the weapon with whcih you parried. This attack takes a -20 penalty to the test."
+        )
+        crachShot = Talent(
+            talent_name='Crack Shot',
+            talent_desc='You are able to target your shots at the places where they will inflict more harm. When your ranged attacks deal critical damage, you deal an extra 2 points.'
+        )
+        cripplingStrike = Talent(
+            talent_name='Crippling Strike',
+            talent_desc='You are able to land your blows in the spot where they will inflict the most harm. Whenever you deal critical damage to an opponent using a melee weapon, you may deal an additional 1d5-1 points.'
+        )
 
         db.session.add(airOfAuthority)
         db.session.add(ambidexterous)
@@ -136,6 +148,9 @@ def seed_talents():
         db.session.add(combatMaster)
         db.session.add(concealedCavity)
         db.session.add(corpusConversion)
+        db.session.add(counterAttack)
+        db.session.add(crachShot)
+        db.session.add(cripplingStrike)
         db.session.commit()
     except Exception as e:
         print('-------------------------------------------------------')
