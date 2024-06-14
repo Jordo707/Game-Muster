@@ -1,13 +1,20 @@
-from app.models import db, talent, environment, SCHEMA
+from app.models import db, environment, SCHEMA
+from app.models.talent import Talent
 from sqlalchemy.sql import text
 
 def seed_talents():
-    airOfAuthority = talent(
-        talent_name = 'Air of Authority',
-        talent_desc = "You exude a natural aura of command, instilling subservience in all around you. On a successful command test, you may affect a number of targets equal to 1d10 times your fellowship bonus. Such is the authority in your voice that even those who are not in your service jump to attention when you speak. You may attempt to get non-servants to follow your commands by making a command test with a -10 penalty."
-    )
-    db.session.add(airOfAuthority)
-    db.session.commit()
+    try:
+        airOfAuthority = Talent(
+            talent_name='Air of Authority',
+            talent_desc="You exude a natural aura of command, ..."
+        )
+        db.session.add(airOfAuthority)
+        db.session.commit()
+    except Exception as e:
+        print('-------------------------------------------------------')
+        print(f"Error seeding talents: {e}")
+        print('-------------------------------------------------------')
+        db.session.rollback()
 
 def undo_talents():
     if environment == 'production':
