@@ -121,6 +121,50 @@ def seed_talents():
             talent_name='Crippling Strike',
             talent_desc='You are able to land your blows in the spot where they will inflict the most harm. Whenever you deal critical damage to an opponent using a melee weapon, you may deal an additional 1d5-1 points.'
         )
+        crushingBlow = Talent(
+            talent_name='Crushing Blow',
+            talent_desc='Your melee strikes land with force enough to shatter bone. You add +2 to damage you inflict in melee.'
+        )
+        darkSoul = Talent(
+            talent_name='Dark Soul',
+            talent_desc='Your soul is darkly stained, making you resilient to the effects of corruption. Whenever you are called to make a malignancy test, you take half the normal penalty.'
+        )
+        deadeyeShot = Talent(
+            talent_name='Deadeye Shot',
+            talent_name='You always hit an opponent right between the eyes... or wherever else you intended to hit them. When making a called shot, you only take a -10 penalty rather than the typical -20.'
+        )
+        decadence = Talent(
+            talent_name='Decadence',
+            talent_name='Either through mental and physical conditioning or long years of abuse, your body has built up a tolerance to chemicals. When drinking alcohol or similar beverages, you do not pass out until you have failed a number of toughness tests equal to your twice your toughness bonus. You also gain +10 to tests made to continue using drugs within 24 hours.'
+        )
+        deflectShot = Talent(
+            talent_name='Deflect Shot',
+            talent_desc='You are able to knock aside thrown weapons and shots fired from primitive weapons. You may spend a reaction to parry an incoming ranged attack so long as the weapon is from a primitive or thrown weapon.'
+        )
+        dieHard = Talent(
+            talent_name='Die Hard',
+            talent_desc='It takes more than most to finish you off. When you suffer from blood loss, you may roll twice to avoid death.'
+        )
+        disarm = Talent(
+            talent_name='Disarm',
+            talent_desc="You are able to knock your opponent's weapons from their hands. When engaged with an opponent weilding a melee weapon, you may use a full action to disarm your foe by making an opposed weapon skill test. If you beat your opponent, they drop their weapon at their feet. Should you get three or more degrees of success, you not only disarm your enemy, but take their weapon from them!"
+        )
+        disciplineFocus = Talent(
+            talent_name='Discipline Focus',
+            talent_desc='You devote a great deal of time and effort into mastering your discipline. Choose one of your diciplines. You gain a +2 bonus to power rolls made to manifest any power of this discipline.'
+        )
+        disturbingVoice = Talent(
+            talent_name='Disturbing Voice',
+            talent_desc='You have a sinister and upsetting voice. This may be due to infrasonic cadences produced by a vox synthesizer, interrogation training, or just an inborn air of malice. You gain a +10 bonus to intimidate and interrogation tests when you use your voice. You also take a -10 penalty to fellowship tests when dealing with those who are likely to be put off by your manner (psykers, small children, nervous grox, and so on).'
+        )
+        doubleTeam = Talent(
+            talent_name='Double Team',
+            talent_desc='You fight best shoulder to shoulder with a loyal ally. When ganging up on an opponent in melee combat with an ally, you gain an additional +10 bonus to your weapon skill tests. If both of you have this talent, you both gain an additional +10 bonus, for a total of +20. This bonus is in addition to the normal bonuses gained from outnumbering an opponent.'
+        )
+        dualShot = Talent(
+            talent_name='Dual Shot',
+            talent_desc='You are able to focus the firepower of two guns to maximize the impact. When armed with two pistols, you can fire both simultaniously as a full action. Make a single ballistic skill test. On a success, you hit with both shots.'
+        )
 
         db.session.add(airOfAuthority)
         db.session.add(ambidexterous)
@@ -151,6 +195,17 @@ def seed_talents():
         db.session.add(counterAttack)
         db.session.add(crachShot)
         db.session.add(cripplingStrike)
+        db.session.add(crushingBlow)
+        db.session.add(darkSoul)
+        db.session.add(deadeyeShot)
+        db.session.add(decadence)
+        db.session.add(deflectShot)
+        db.session.add(dieHard)
+        db.session.add(disarm)
+        db.session.add(disciplineFocus)
+        db.session.add(disturbingVoice)
+        db.session.add(doubleTeam)
+        db.session.add(dualShot)
         db.session.commit()
     except Exception as e:
         print('-------------------------------------------------------')
