@@ -165,6 +165,10 @@ def seed_talents():
             talent_name='Dual Shot',
             talent_desc='You are able to focus the firepower of two guns to maximize the impact. When armed with two pistols, you can fire both simultaniously as a full action. Make a single ballistic skill test. On a success, you hit with both shots.'
         )
+        dualStrike = Talent(
+            talent_name='Dual Strike',
+            talent_desc='You are able to focus your melee attacks to maximize the impact. When armed with two melee weapons, you can attack with both simultaniously as a full action. Make a single weapon skill test. On a success, you hit the target with both weapons.'
+        )
 
         db.session.add(airOfAuthority)
         db.session.add(ambidexterous)
@@ -206,6 +210,7 @@ def seed_talents():
         db.session.add(disturbingVoice)
         db.session.add(doubleTeam)
         db.session.add(dualShot)
+        db.session.add(dualStrike)
         db.session.commit()
     except Exception as e:
         print('-------------------------------------------------------')
