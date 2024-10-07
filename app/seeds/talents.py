@@ -197,6 +197,97 @@ def seed_talents():
             talent_name='Exotic Weapon Training (Webber)',
             talent_desc='You have received exotic weapon training in webbers and can use them without penalty.'
         )
+        favoredByTheWarp = Talent(
+            talent_name='Favored by the Warp',
+            talent_desc='Whenever a power roll triggers psychic phenomena, you may roll two dice on that table and take the more favorable result.'
+        )
+        fearless = Talent(
+            talent_name="Fearless",
+            talent_desc='Whether through fervent loyalty or a derangement of the mind, you are impossible to frighten or unnerve. You are immune to the effects of fear and pinning, but to disengage from combat or back down from a fight you must first succeed on a willpower test.'
+        )
+        feedbackScreech = Talent(
+            talent_name='Feedback Screech',
+            talent_desc='By muttering illogical formulae under your breath, you are able to foment rebellion within your vox synthesizers. Your audio circuits protest in a screeching blast fo noise, shocking and distracting others in equal meassure. All creatures except demonic and machine-based, within a 30 meter radius must make a willpower test or lose half an action on their next turn as they shudder, swear, cover their ears, or otherwise react to the horrid noise. This is a full action and may not be used again for 1d5 rounds while your audio circuits reset.'
+        )
+        ferricLure = Talent(
+            talent_name='Ferric Lure',
+            talent_desc='You can call an unsecured metal object that you can see to your hand. You may summon objects of up to 1 kilogram per point of your Willpower Bonus. The object must be within a 20 meter radius. To use this Talent, you must succeed on a Willpower Test as a Full Action.'
+        )
+
+        ferricSummons = Talent(
+            talent_name='Ferric Summons',
+            talent_desc='You can call an unsecured metal object that you can see to your hand. You may summon objects of up to 2 kilograms per point of your Willpower Bonus. The object must be within a 40 meter radius. You must make a Willpower Test and spend a Full Action to enact this rite.'
+        )
+
+        flagellant = Talent(
+            talent_name='Flagellant',
+            talent_desc='You have dedicated your pain to the service of the Emperor. Each day, you must spend twenty minutes praying and inflicting 1 point of Damage upon yourself. You may not treat this Damage or allow it to be healed. Once you have castigated yourself, you gain a +10 bonus to Willpower Tests made to resist mind control or Malignancy. Additionally, if you have the Frenzy talent, you may enter a frenzied state as a Free Action. Should you fail to flagellate yourself on any given day, you take a -5 penalty to all Tests due to shame and guilt.'
+        )
+
+        foresight = Talent(
+            talent_name='Foresight',
+            talent_desc='You are adept at identifying the consequences of any action. If you take some time to consider what you are doing, you can deduce the best action for success. You may spend ten minutes contemplating a problem to gain a +10 bonus to your next relevant Intelligence Test.'
+        )
+
+        frenzy = Talent(
+            talent_name='Frenzy',
+            talent_desc='You can incite yourself into a frothing rage. You must spend one Round psyching yourself up (howling, beating yourself or injecting psychosis-inducing drugs). The next round you lose control and go berserk, gaining a +10 bonus to Strength and Willpower but a -10 penalty to Weapon Skill and Intelligence. You must attack the nearest enemy in melee combat and you may not flee, retreat or Parry. When possible, you must use the All-Out Attack Maneuver. You remain frenzied for the duration of the combat. Some creatures, particularly certain types of Daemon, do not need to spend a Round inciting the frenzy—they are either permanently Frenzied or can Frenzy at will. Unless you have a Talent that allows you to do so, you may not use Psychic Powers whilst in Frenzy.'
+        )
+
+        furiousAssault = Talent(
+            talent_name='Furious Assault',
+            talent_desc='Your blows follow one another in quick succession, raining down on your opponents like fiery bolts. Whenever you hit an opponent whilst using the All-Out Attack Maneuver, you may spend your Reaction to make an extra attack (this extra attack retains any bonuses or penalties of the original attack).'
+        )
+
+        goodReputationAdministratum = Talent(
+            talent_name='Good Reputation (Administratum)',
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Administratum. This Talent is cumulative with the Peer (Administratum) talent, for a total of a +20 bonus.'
+        )
+
+        goodReputationEcclesiarchy = Talent(
+            talent_name='Good Reputation (Ecclesiarchy)',
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Ecclesiarchy. This Talent is cumulative with the Peer (Ecclesiarchy) talent, for a total of a +20 bonus.'
+        )
+
+        goodReputationImperialGuard = Talent(
+            talent_name='Good Reputation (Imperial Guard)',
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Imperial Guard. This Talent is cumulative with the Peer (Imperial Guard) talent, for a total of a +20 bonus.'
+        )
+
+        goodReputationImperialNavy = Talent(
+            talent_name='Good Reputation (Imperial Navy)',
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Imperial Navy. This Talent is cumulative with the Peer (Imperial Navy) talent, for a total of a +20 bonus.'
+        )
+
+        goodReputationInquisition = Talent(
+            talent_name='Good Reputation (Inquisition)',
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Inquisition. This Talent is cumulative with the Peer (Inquisition) talent, for a total of a +20 bonus.'
+        )
+
+        goodReputationUnderworld = Talent(
+            talent_name='Good Reputation (Underworld)',
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Underworld. This Talent is cumulative with the Peer (Underworld) talent, for a total of a +20 bonus.'
+        )
+
+        gunBlessing = Talent(
+            talent_name='Gun Blessing',
+            talent_desc='With a wave you can unjam a number of guns equal to your Intelligence Bonus. You may bless any weapon in a 10 meter radius. To do so, make an Intelligence Test. A success indicates that you have rallied the spirits of the weapons. This blessing is a Full Action.'
+        )
+
+        gunslinger = Talent(
+            talent_name='Gunslinger',
+            talent_desc='You are ready for anything when you have a pistol in each hand. When so armed, you reduce the penalty for fighting with two weapons by -10. If you have the Ambidextrous talent, you take no penalty when firing both weapons.'
+        )
+
+        hardTarget = Talent(
+            talent_name='Hard Target',
+            talent_desc='The best way to stay alive is to keep on moving, no matter what might come your way. Whenever you Charge or Run, all opponents take a -20 penalty to Ballistic Skill Tests made to hit you with a ranged weapon. This penalty lasts until the start of your next Turn.'
+        )
+
+        hardy = Talent(
+            talent_name='Hardy',
+            talent_desc='For the purposes of removing Damage, you are always considered to be Lightly Wounded.'
+        )
 
         db.session.add(airOfAuthority)
         db.session.add(ambidexterous)
@@ -246,6 +337,25 @@ def seed_talents():
         db.session.add(exoticWeaponTrainingWebPistol)
         db.session.add(exoticWeaponTrainingNeedleRifle)
         db.session.add(exoticWeaponTrainingWebber)
+        db.session.add(favoredByTheWarp)
+        db.session.add(fearless)
+        db.session.add(feedbackScreech)
+        db.session.add(ferricLure)
+        db.session.add(ferricSummons)
+        db.session.add(flagellant)
+        db.session.add(foresight)
+        db.session.add(frenzy)
+        db.session.add(furiousAssault)
+        db.session.add(goodReputationAdministratum)
+        db.session.add(goodReputationEcclesiarchy)
+        db.session.add(goodReputationImperialGuard)
+        db.session.add(goodReputationImperialNavy)
+        db.session.add(goodReputationInquisition)
+        db.session.add(goodReputationUnderworld)
+        db.session.add(gunBlessing)
+        db.session.add(gunslinger)
+        db.session.add(hardTarget)
+        db.session.add(hardy)
         db.session.commit()
     except Exception as e:
         print('-------------------------------------------------------')
