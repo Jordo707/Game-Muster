@@ -169,6 +169,34 @@ def seed_talents():
             talent_name='Dual Strike',
             talent_desc='You are able to focus your melee attacks to maximize the impact. When armed with two melee weapons, you can attack with both simultaniously as a full action. Make a single weapon skill test. On a success, you hit the target with both weapons.'
         )
+        electricalSuccour = Talent(
+            talent_name='Electrical Succour',
+            talent_desc='You call upon the sacred vow of energy to replenish your weak flesh. Whilst in contact with a functioning, powered machine or fully charged battery, you may make an ordinary (+10) toughness test. If you succeed, remove one level of fatigue plus one additional level of fatigue for each degree of success. This takes one minute of meditation and ritual incantation to activate.'
+        )
+        electroGraftUse = Talent(
+            talent_name='Electro Graft Use',
+            talent_desc='You have the ability to use an electro graft to access data point and commune with machine spirits. This grants you a +10 bonus to common lore, inquiry, or tech-use tests whilst connected to a data point.'
+        )
+        energyCache = Talent(
+            talent_name='Energy Cache',
+            talent_desc='You have learned how to focus some of the power stored within your potentia coil. You no longer gain fatigue from using luminen charge, luminen shock, or luminen blast.'
+        )
+        exoticWeaponTrainingNeedlePistol = Talent(
+            talent_name='Exotic Weapon Training (Needle Pistol)',
+            talent_desc='You have received exotic weapon training in needle pistols and can use them without penalty.'
+        )
+        exoticWeaponTrainingWebPistol = Talent(
+            talent_name='Exotic Weapon Training (Web Pistol)',
+            talent_desc='You have received exotic weapon training in web pistols and can use them without penalty.'
+        )
+        exoticWeaponTrainingNeedleRifle = Talent(
+            talent_name='Exotic Weapon Training (Needle Rifle)',
+            talent_desc='You have received exotic weapon training in needle rifles and can use them without penalty.'
+        )
+        exoticWeaponTrainingWebber = Talent(
+            talent_name='Exotic Weapon Training (Webber)',
+            talent_desc='You have received exotic weapon training in webbers and can use them without penalty.'
+        )
 
         db.session.add(airOfAuthority)
         db.session.add(ambidexterous)
@@ -211,6 +239,13 @@ def seed_talents():
         db.session.add(doubleTeam)
         db.session.add(dualShot)
         db.session.add(dualStrike)
+        db.session.add(electricalSuccour)
+        db.session.add(electroGraftUse)
+        db.session.add(energyCache)
+        db.session.add(exoticWeaponTrainingNeedlePistol)
+        db.session.add(exoticWeaponTrainingWebPistol)
+        db.session.add(exoticWeaponTrainingNeedleRifle)
+        db.session.add(exoticWeaponTrainingWebber)
         db.session.commit()
     except Exception as e:
         print('-------------------------------------------------------')
