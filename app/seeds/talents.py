@@ -241,37 +241,36 @@ def seed_talents():
 
         goodReputationAdministratum = Talent(
             talent_name='Good Reputation (Administratum)',
-            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Administratum. This Talent is cumulative with the Peer (Administratum) talent, for a total of a +20 bonus.'
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to fellowship tests when dealing with the administratum. This talent is cumulative with the peer (administratum) talent, for a total of a +20 bonus.'
         )
 
         goodReputationEcclesiarchy = Talent(
             talent_name='Good Reputation (Ecclesiarchy)',
-            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Ecclesiarchy. This Talent is cumulative with the Peer (Ecclesiarchy) talent, for a total of a +20 bonus.'
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to fellowship tests when dealing with the ecclesiarchy. This talent is cumulative with the peer (ecclesiarchy) talent, for a total of a +20 bonus.'
         )
 
         goodReputationImperialGuard = Talent(
             talent_name='Good Reputation (Imperial Guard)',
-            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Imperial Guard. This Talent is cumulative with the Peer (Imperial Guard) talent, for a total of a +20 bonus.'
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to fellowship tests when dealing with the imperial guard. This talent is cumulative with the peer (imperial guard) talent, for a total of a +20 bonus.'
         )
 
         goodReputationImperialNavy = Talent(
             talent_name='Good Reputation (Imperial Navy)',
-            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Imperial Navy. This Talent is cumulative with the Peer (Imperial Navy) talent, for a total of a +20 bonus.'
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to fellowship tests when dealing with the imperial navy. This talent is cumulative with the peer (imperial navy) talent, for a total of a +20 bonus.'
         )
 
         goodReputationInquisition = Talent(
             talent_name='Good Reputation (Inquisition)',
-            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Inquisition. This Talent is cumulative with the Peer (Inquisition) talent, for a total of a +20 bonus.'
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to fellowship tests when dealing with the inquisition. This talent is cumulative with the peer (inquisition) talent, for a total of a +20 bonus.'
         )
 
         goodReputationUnderworld = Talent(
             talent_name='Good Reputation (Underworld)',
-            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to Fellowship Tests when dealing with the Underworld. This Talent is cumulative with the Peer (Underworld) talent, for a total of a +20 bonus.'
+            talent_desc='You are well respected within your social group or organization. You gain an additional +10 bonus to fellowship tests when dealing with the underworld. This talent is cumulative with the peer (underworld) talent, for a total of a +20 bonus.'
         )
-
         gunBlessing = Talent(
             talent_name='Gun Blessing',
-            talent_desc='With a wave you can unjam a number of guns equal to your Intelligence Bonus. You may bless any weapon in a 10 meter radius. To do so, make an Intelligence Test. A success indicates that you have rallied the spirits of the weapons. This blessing is a Full Action.'
+            talent_desc='With a wave you can unjam a number of guns equal to your Intelligence Bonus. You may bless any weapon in a 10 meter radius. To do so, make an intelligence test. A success indicates that you have rallied the spirits of the weapons. This blessing is a full action.'
         )
 
         gunslinger = Talent(
@@ -281,12 +280,12 @@ def seed_talents():
 
         hardTarget = Talent(
             talent_name='Hard Target',
-            talent_desc='The best way to stay alive is to keep on moving, no matter what might come your way. Whenever you Charge or Run, all opponents take a -20 penalty to Ballistic Skill Tests made to hit you with a ranged weapon. This penalty lasts until the start of your next Turn.'
+            talent_desc='The best way to stay alive is to keep on moving, no matter what might come your way. Whenever you charge or run, all opponents take a -20 penalty to ballistic skill tests made to hit you with a ranged weapon. This penalty lasts until the start of your next turn.'
         )
 
         hardy = Talent(
             talent_name='Hardy',
-            talent_desc='For the purposes of removing Damage, you are always considered to be Lightly Wounded.'
+            talent_desc='For the purposes of removing damage, you are always considered to be lightly wounded.'
         )
 
         db.session.add(airOfAuthority)
