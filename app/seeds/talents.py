@@ -131,11 +131,11 @@ def seed_talents():
         )
         deadeyeShot = Talent(
             talent_name='Deadeye Shot',
-            talent_name='You always hit an opponent right between the eyes... or wherever else you intended to hit them. When making a called shot, you only take a -10 penalty rather than the typical -20.'
+            talent_desc='You always hit an opponent right between the eyes... or wherever else you intended to hit them. When making a called shot, you only take a -10 penalty rather than the typical -20.'
         )
         decadence = Talent(
             talent_name='Decadence',
-            talent_name='Either through mental and physical conditioning or long years of abuse, your body has built up a tolerance to chemicals. When drinking alcohol or similar beverages, you do not pass out until you have failed a number of toughness tests equal to your twice your toughness bonus. You also gain +10 to tests made to continue using drugs within 24 hours.'
+            talent_desc='Either through mental and physical conditioning or long years of abuse, your body has built up a tolerance to chemicals. When drinking alcohol or similar beverages, you do not pass out until you have failed a number of toughness tests equal to your twice your toughness bonus. You also gain +10 to tests made to continue using drugs within 24 hours.'
         )
         deflectShot = Talent(
             talent_name='Deflect Shot',

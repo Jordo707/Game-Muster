@@ -1,8 +1,9 @@
-from app.models import db, character_sheet, environment, SCHEMA
+from app.models import db, environment, SCHEMA
+from app.models.character_sheet import CharacterSheet
 from sqlalchemy.sql import text
 
 def seed_character_sheets():
-    sample = character_sheet(
+    sample = CharacterSheet(
         player_id = 1,
         stat_sheet_id = 1,
         xp_max = 500,

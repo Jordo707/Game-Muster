@@ -1,8 +1,10 @@
-from app.models import db, User, contact, environment, SCHEMA
+from app.models import db, environment, SCHEMA
+from app.models.user import User
+from app.models.contact import Contact
 from sqlalchemy.sql import text
 
 def seed_contacts():
-    demo_contact = contact(
+    demo_contact = Contact(
         name="demo contact",
         description = "demo description",
         is_group = False,
@@ -20,5 +22,3 @@ def undo_contacts():
         db.session.execute(text('DELETE FROM contacts'))
 
     db.session.commit()
-
-
